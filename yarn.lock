@@ -867,23 +867,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@langchain/core@npm:^0.3.43":
-  version: 0.3.43
-  resolution: "@langchain/core@npm:0.3.43"
+"@langchain/core@npm:^0.3.80":
+  version: 0.3.80
+  resolution: "@langchain/core@npm:0.3.80"
   dependencies:
     "@cfworker/json-schema": ^4.0.2
     ansi-styles: ^5.0.0
     camelcase: 6
     decamelize: 1.2.0
     js-tiktoken: ^1.0.12
-    langsmith: ">=0.2.8 <0.4.0"
+    langsmith: ^0.3.67
     mustache: ^4.2.0
     p-queue: ^6.6.2
     p-retry: 4
     uuid: ^10.0.0
-    zod: ^3.22.4
+    zod: ^3.25.32
     zod-to-json-schema: ^3.22.3
-  checksum: 5e5e9cd1ce39891177bc1d0d240785b60edeb0f9d53bb78a2ce394adf6fd15b972b63fb7a9d13c1f7b1341c79631baaa77225f6df36f509d0a606fb350f1d60f
+  checksum: b11dbcfff1f63b2db55d655867440cd69bd6bd4f21c7b0167e5eae2dcea37195a8243db93e024c8e3cddac5ac11e8771cf38b032788210eb28204e955424ea61
   languageName: node
   linkType: hard
 
@@ -4286,7 +4286,7 @@ __metadata:
   resolution: "langchain-nextjs-template@workspace:."
   dependencies:
     "@langchain/community": ^0.3.37
-    "@langchain/core": ^0.3.43
+    "@langchain/core": ^0.3.80
     "@langchain/langgraph": ^0.2.57
     "@langchain/langgraph-sdk": ^0.0.60
     "@langchain/openai": ^0.4.9
@@ -4499,6 +4499,34 @@ __metadata:
     openai:
       optional: true
   checksum: d47998e3610a89eae71fe9e2b6b4d43ba155b1880aa6e5714ad819f2f2a703edebc8b493745ceeee32f00fa77162e481790fc0b627436f76aa15fea51d8de937
+  languageName: node
+  linkType: hard
+
+"langsmith@npm:^0.3.67":
+  version: 0.3.87
+  resolution: "langsmith@npm:0.3.87"
+  dependencies:
+    "@types/uuid": ^10.0.0
+    chalk: ^4.1.2
+    console-table-printer: ^2.12.1
+    p-queue: ^6.6.2
+    semver: ^7.6.3
+    uuid: ^10.0.0
+  peerDependencies:
+    "@opentelemetry/api": "*"
+    "@opentelemetry/exporter-trace-otlp-proto": "*"
+    "@opentelemetry/sdk-trace-base": "*"
+    openai: "*"
+  peerDependenciesMeta:
+    "@opentelemetry/api":
+      optional: true
+    "@opentelemetry/exporter-trace-otlp-proto":
+      optional: true
+    "@opentelemetry/sdk-trace-base":
+      optional: true
+    openai:
+      optional: true
+  checksum: 30b9b076199c4201ab475440e9887da58884d4c10e0cbcee554c7cffe0c42d9169224452904400d8e6c441d715217c479865fca484d4624c30160f4df6e4b6c8
   languageName: node
   linkType: hard
 
@@ -6930,5 +6958,12 @@ __metadata:
   version: 3.23.8
   resolution: "zod@npm:3.23.8"
   checksum: 15949ff82118f59c893dacd9d3c766d02b6fa2e71cf474d5aa888570c469dbf5446ac5ad562bb035bf7ac9650da94f290655c194f4a6de3e766f43febd432c5c
+  languageName: node
+  linkType: hard
+
+"zod@npm:^3.25.32":
+  version: 3.25.76
+  resolution: "zod@npm:3.25.76"
+  checksum: c9a403a62b329188a5f6bd24d5d935d2bba345f7ab8151d1baa1505b5da9f227fb139354b043711490c798e91f3df75991395e40142e6510a4b16409f302b849
   languageName: node
   linkType: hard
